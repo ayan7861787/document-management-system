@@ -18,7 +18,7 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+ app.use(cors({origin:"https://document-management-system-gold-six.vercel.app"}))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
